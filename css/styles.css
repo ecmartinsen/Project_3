@@ -50,3 +50,29 @@ hr:nth-child(3) {
   background-color: #4d4d4d;
   margin-top: 5px;
 }
+
+hr:nth-child(1) {
+  border: none;
+  height: 3px;
+  color: black;
+  background-color: #4d4d4d;
+  margin-top: 5px;
+}
+
+label,
+input {
+  display: block;
+}
+
+input[type^="checkbox"],
+label[for$="-news"],
+input[type^="radio"],
+label[for$="-option"] {
+  display: inline;
+}
+
+
+
+fieldset {
+  border: none;
+}
