@@ -4,6 +4,7 @@
     <title>Online registration form</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   </head>
   <body>
 
@@ -29,18 +30,18 @@
 
             <fieldset>
 
-              <legend>Contact Information</legend>
+              <legend id="header-1"><h1>Contact Information</h1></legend>
 
-              <label for="name">Full name</label>
-              <input type="text" id="name" name="user-name">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="user-name" placeholder="Required">
 
-              <label for="mail">Email adress</label>
-              <input type="text" id="mail" name="user-email">
+              <label for="mail">Email Adress</label>
+              <input type="text" id="mail" name="user-email" placeholder="Required">
 
-              <label for="phone">Phone number</label>
+              <label for="telephone">Phone Number</label>
               <input type="text" id="phone" name="user-phone">
 
-              <label for="address">Street adress</label>
+              <label for="address">Street Adress</label>
               <input type="text" id="address" name="user-address">
 
               <label for="city">City</label>
@@ -48,7 +49,7 @@
 
               <label for="state">State</label>
               <select id="state" name="user-state">
-                <option selected disabled hidden>Choose State</option>
+                <option>Choose State</option>
                 <option value="AL">Alabama</option>
          				<option value="AK">Alaska</option>
          				<option value="AZ">Arizona</option>
@@ -114,32 +115,31 @@
 
           <section>
             <fieldset>
-              <legend>Newsletter</legend>
-              <label>Select the newsletter you would like to receive</label>
+              <ul class="flex-container">
+              <li class="item-1 item-none"><legend id="header-2"><h1>Newsletter</h1></legend></li>
+              <li class="item-2 item"><label>Select the newsletter you would like to receive</label></li>
 
-              <input type="checkbox" id="html-news" value="html" name="user-html">
-              <label for="html-news">HTML News</label><br>
+              <li class="item-3 item"><input type="checkbox" id="html-news" value="html" name="user-html">
+              <label for="html-news">HTML News</label></li>
 
-              <input type="checkbox" id="css-news" value="css" name="user-css">
-              <label for="css-news">CSS News</label><br>
+              <li class="item-4 item"><input type="checkbox" id="css-news" value="css" name="user-css">
+              <label for="css-news">CSS News</label></li>
 
-              <input type="checkbox" id="javascript-news" value="javascript" name="user-jacascript">
-              <label for="javascript-news">Javascript News</label>
+              <li class="item-5 item"><input type="checkbox" id="javascript-news" value="javascript" name="user-javascript">
+              <label for="javascript-news">Javascript News</label></li>
 
-            </fieldset>
-            <fieldset>
-              <label>Newsletter format</label><br>
+              <li class="item-6 item"><label>Newsletter format</label></li>
 
-              <input type="radio" id="html" value="html" name="option">
-              <label for="html-option">HTML</label><br>
+              <li class="item-7 item"><input type="radio" id="html" value="html" name="option">
+              <label for="html-option">HTML</label></li>
 
-              <input type="radio" id="text" value="text" name="option">
-              <label for="text-option">Plain text</label>
-            </fieldset>
-            <fieldset>
-              <label>Other topics you'd like to hear about</label><br>
-              <textarea id="text" name="user-text"></textarea><br><br>
-              <button type="submit">Sign Up</submit>
+              <li class="item-8 item"><input type="radio" id="text" value="text" name="option">
+              <label for="text-option">Plain text</label></li>
+
+              <li class="item-9 item"><label>Other topics you'd like to hear about</label></li>
+              <li class="item-10 item"><textarea id="text" name="user-text"></textarea></li>
+              <li class="item-11 item"><button type="submit">Sign Up</submit></li>
+              </ul>
             </fieldset>
 
           </section>

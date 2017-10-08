@@ -3,18 +3,28 @@
 }
 
 
-/*GENERAL HTML TAGS AND CSS STYLES*/
+/*
+================================
+GENERAL HTML TAGS AND CSS STYLES
+================================
+*/
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Merriweather', serif;
 }
 
 .wrapper {
   padding: 0 15px;
+
 }
 
 
-/*MOBILE FIRST CSS*/
+/*
+=========================
+MOBILE FIRST CSS
+=========================
+*/
 
 header > h1 {
   text-transform: uppercase;
@@ -35,6 +45,100 @@ div > p {
   text-align: center;
 }
 
+footer > p {
+  color: #999999;
+  text-align: center;
+}
+
+label,
+input {
+  display: block;
+  color: #999999;
+}
+
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+option {
+  color: grey;
+  margin: 50px;
+}
+
+textarea {
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 150px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  background-color: #339966;
+  border: none;
+  font-size: 24px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+select {
+  padding-left: 10px;
+}
+
+/*
+===========================
+      CSS SELECTORS
+===========================
+*/
+input[type^="text"],
+select[id^="state"] {
+  border-radius: 7px;
+  height: 50px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+input[type^="text"]:focus,
+select:focus,
+textarea:focus {
+  background-color: white;
+}
+
+ input[id^="zip"]{
+  border-radius: 7px;
+  height: 50px;
+  width: 50%;
+  background-color: #f2f2f2;
+}
+
+label[for^="name"],
+label[for^="mail"],
+label[for^="telephone"],
+label[for^="address"],
+label[for^="city"],
+label[for^="state"],
+label[for^="zip"] {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #999999;
+}
+
+input[type^="checkbox"],
+label[for$="-news"],
+input[type^="radio"],
+label[for$="-option"] {
+  display: inline;
+  width: 12px;
+  margin-right: 5px;
+}
+
+
 hr:nth-child(2) {
   border: none;
   height: 5px;
@@ -49,6 +153,7 @@ hr:nth-child(3) {
   color: black;
   background-color: #4d4d4d;
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 hr:nth-child(1) {
@@ -56,23 +161,91 @@ hr:nth-child(1) {
   height: 3px;
   color: black;
   background-color: #4d4d4d;
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
-label,
-input {
-  display: block;
+/*
+==========================
+CSS CLASSES AND ID'S
+==========================
+*/
+#header-1 {
+  margin: 10px 0px 0px 0px;
 }
 
-input[type^="checkbox"],
-label[for$="-news"],
-input[type^="radio"],
-label[for$="-option"] {
-  display: inline;
+.item-none {
+  list-style-type: none;
+  margin-bottom: -10px;
 }
 
+.item-8 {
+  margin-bottom: 20px;
+}
 
+li.item-6 label {
+  margin-top: 15px;
+}
 
-fieldset {
-  border: none;
+/*
+=========================
+FLEX STYLES
+=========================
+*/
+.flex-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.item {
+  list-style-type: none;
+  flex-basis: 100%;
+  margin-top: 10px;
+
+}
+
+/*
+========================
+PLACEHOLDERS CSS
+========================
+*/
+::-webkit-input-placeholder {
+ color: #d0cdfa;
+ text-align: right;
+ padding-right: 20px;
+}
+
+:-moz-placeholder {
+ color: #d0cdfa;
+ text-align: right;
+ padding-right: 20px;
+}
+
+::-moz-placeholder {
+ color: #d0cdfa;
+ text-align: right;
+ padding-right: 20px;
+}
+
+:-ms-input-placeholder {
+ color: #d0cdfa;
+ text-align: right;
+ padding-right: 20px;
+}
+
+input[type^="text"]::-webkit-input-placeholder {
+  font-family: 'Merriweather', serif;
+}
+
+input[type^="text"]:-ms-input-placeholder {
+  font-family: 'Merriweather', serif;
+}
+
+input[type^="text"]:-moz-placeholder {
+  font-family: 'Merriweather', serif;
+}
+
+input[type^="text"]::-moz-placeholder {
+  font-family: 'Merriweather', serif;
 }
