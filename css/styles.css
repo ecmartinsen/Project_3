@@ -52,9 +52,7 @@ footer > p {
 
 label,
 input {
-  display: block;
   color: #999999;
-
 }
 
 
@@ -94,6 +92,7 @@ select {
 
 
 
+
 /*
 ===========================
       CSS SELECTORS
@@ -109,9 +108,11 @@ input[type^="text"],
 select[id^="state"] {
   border-radius: 7px;
   height: 50px;
-  max-width: 100%;
+  width: 100%;
   background-color: #f2f2f2;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
 
 }
 
@@ -122,10 +123,12 @@ textarea:focus {
 }
 
  input[id^="zip"]{
+  display: block;
   border-radius: 7px;
   height: 50px;
   width: 30%;
   background-color: #f2f2f2;
+
 }
 
 label[for^="name"],
@@ -164,7 +167,7 @@ hr:nth-child(3) {
   color: black;
   background-color: #4d4d4d;
   margin-top: 5px;
-  margin-bottom: 15px;
+
 }
 
 hr:nth-child(1) {
@@ -180,6 +183,8 @@ hr:nth-child(1) {
 CSS CLASSES AND ID'S
 ==========================
 */
+
+
 #header-1 {
   margin: 10px 0px 0px 0px;
 }
@@ -197,7 +202,7 @@ li.item-6 label {
   margin-top: 15px;
 }
 
-.flex-container-1 {
+.flexas {
   list-style: none;
 }
 /*
@@ -205,6 +210,17 @@ li.item-6 label {
 FLEX STYLES
 =========================
 */
+
+.flex-container-1 {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*.flex-container-1 f-item {
+  flex-basis: 35%;
+}*/
+
+
 .flex-container {
   display: inline-flex;
   flex-wrap: wrap;
@@ -216,7 +232,6 @@ FLEX STYLES
   list-style-type: none;
   flex-basis: 100%;
   margin-top: 10px;
-
 }
 
 /*
@@ -278,19 +293,20 @@ BREAK POINT
   margin: 0 auto;
 }
 
-.flex-container-1 {
+.flex-container-1 li {
   display: flex;
-  flex-direction: column;
-  list-style-type: none;
-
 }
 
-.flex-container-1 f-item {
+.flex-container-1 label {
   flex-basis: 35%;
+
+}
+.flex-container-1 label[for^="zip"] {
+  flex-basis: 25.5%;
 }
 
-
-
-
+input[id^="zip"] {
+  width: 30%;
+  display: inline;
 
 }
