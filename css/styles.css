@@ -109,7 +109,7 @@ input[type^="text"],
 select[id^="state"] {
   border-radius: 7px;
   height: 50px;
-  width: 100%;
+  max-width: 100%;
   background-color: #f2f2f2;
   margin: 0;
 
@@ -285,7 +285,7 @@ BREAK POINT
 
 }
 
-.flex-container-1 item-1-1 {
+.flex-container-1 f-item {
   flex-basis: 35%;
 }
 
