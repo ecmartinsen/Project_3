@@ -38,16 +38,21 @@ header > h1 {
 }
 
 div > h3 {
+  margin-top: 50px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
 div > p {
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
 
 footer > p {
   color: #999999;
   text-align: center;
+  margin-top: 30px;
 }
 
 label,
@@ -171,6 +176,7 @@ hr:nth-child(3) {
   color: black;
   background-color: #4d4d4d;
   margin-top: 5px;
+  margin-bottom: 0px;
 
 }
 
@@ -191,7 +197,13 @@ CSS CLASSES AND ID'S
 
 
 #header-1 {
-  margin: 10px 0px 0px 0px;
+  display: inline-block;
+  margin: 35px 0px 0px 0px;
+}
+
+#header-2 {
+  display: inline-block;
+  margin-top: 40px;
 }
 
 .item-none {
@@ -199,17 +211,23 @@ CSS CLASSES AND ID'S
   margin-bottom: -10px;
 }
 
-.item-8 {
-  margin-bottom: 20px;
+
+li.item-2 {
+  margin-top: 0;
 }
 
 li.item-6 label {
-  margin-top: 15px;
+  display:inline-block;
+  margin-top: 10px;
 }
 
-.flexas {
-  list-style: none;
+li.item-8 {
+  margin-bottom: 10px;
 }
+
+
+
+
 /*
 =========================
 FLEX STYLES
@@ -220,11 +238,6 @@ FLEX STYLES
   list-style-type: none;
   padding-left: 0;
 }
-
-/*.flex-container-1 f-item {
-  flex-basis: 35%;
-}*/
-
 
 .flex-container {
   display: inline-flex;
@@ -284,7 +297,6 @@ input[type^="text"]::-moz-placeholder {
   font-family: 'Merriweather', serif;
 }
 
-
 /*
 ==================================
 BREAK POINT
@@ -313,5 +325,7 @@ BREAK POINT
 input[id^="zip"] {
   width: 30%;
   display: inline;
+
+}
 
 }
